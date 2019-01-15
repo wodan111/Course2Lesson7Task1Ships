@@ -1,7 +1,5 @@
 package ua.testov.test;
 
-import java.io.File;
-
 public class Main {
 	public static void main(String[] args) {
 		Docs docOne = new Docs();
@@ -9,7 +7,7 @@ public class Main {
 
 		Ship shipOne = new Ship(10, docOne);
 		Ship shipTwo = new Ship(10, docTwo);
-		Ship[] ship = new Ship[] {shipOne, shipTwo };
+		Ship[] ship = new Ship[] { shipOne, shipTwo };
 		Thread[] arrThread = new Thread[2];
 		for (int i = 0; i < arrThread.length; i++) {
 			arrThread[i] = new Thread(ship[i]);
